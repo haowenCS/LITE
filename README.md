@@ -5,7 +5,7 @@ LITE is an auto-tuning system for various Spark applications on large-scale data
 ## Tuning Performance on Sparkbench Applications
 We have conducted comparative experiments on 15 spark-bench applications. 
 
-![*Figure 1 Percentage of execution time reduction by different tuning methods*](https://github.com/cheyennelin/LITE/blob/main/fig1.png)
+![*Figure 1 Percentage of execution time reduction by different tuning methods*](./fig1.png)
 ### Baselines ###
 Figure 1 presents comparative performance of LITE, against several baselines. 
 (1) Default: using Spark's default configurations. 
@@ -23,7 +23,7 @@ Figure 1 presents comparative performance of LITE, against several baselines.
 ### Evaluation Metrics ###
 Figure 1 reports percentage of execution time reduction, which is defined as t/tmin, where t is the execution time produced by the method, and tmin is the smallest execution time by different methods on this application, according to Table 1. 
 
-![*Table 1 Actural execution time by different methods*](https://github.com/cheyennelin/LITE/blob/main/tab1_actural.png)
+![*Table 1 Actural execution time by different methods*](./tab1_actural.png)
 
 
 In summary, the average actural execution time and average percentage of execution time reduction for different tuning methods are:
@@ -36,7 +36,7 @@ In summary, the average actural execution time and average percentage of executi
 
 ## Ablation Study on Feature Encoding and Performance Estimation Modules
 
-![*Figure 2 Ranking performance by various feature encoding and performance estimation modules*](https://github.com/cheyennelin/LITE/blob/main/fig2.png)
+![*Figure 2 Ranking performance by various feature encoding and performance estimation modules*](./fig2.png)
 
 We used “feature encoding + performance estimation” to represent a comparative method. For example,𝑊 + 𝑆𝑉𝑅 means support vector regression was implemented on application instance features.
 
@@ -75,7 +75,7 @@ write (i.e., bytes and records written to disk in order to be read by a shuffle 
 
 We used ranking evaluation metrics for a thorough study of the performance. Two evaluation metrics were adopted, HR@K and NDCG@K (here we set K=5).
 
-![*Table 2 Ranking performance by different feature encoding and performance estimation modules*](https://github.com/cheyennelin/LITE/blob/main/tab2.png)
+![*Table 2 Ranking performance by different feature encoding and performance estimation modules*](./tab2.png)
 
 In summary, the average HR@5 and NDCG@5 increasement over different clusters are
 
